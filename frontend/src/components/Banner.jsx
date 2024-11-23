@@ -13,7 +13,7 @@ const Banner = () => {
     return (
         <div
             ref={ref}
-            className={`flex bg-primary rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10 transform transition-all duration-700 ${
+            className={`flex bg-primary rounded-3xl px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10 transform transition-all duration-700 ${
                 inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
@@ -28,9 +28,8 @@ const Banner = () => {
                         navigate('/login');
                         scrollTo(0, 0);
                     }}
-                    className="relative overflow-hidden bg-white text-blue-500 font-bold py-3 px-8 rounded-full mt-6 border-2 border-blue-500 transition duration-300 ease-in-out group"
-                >
-                    <span className="absolute inset-0 bg-blue-500 transition-transform duration-300 ease-in-out transform -translate-x-full group-hover:translate-x-0"></span>
+                    className="relative overflow-hidden bg-white text-primary font-bold py-3 px-8 rounded-full mt-6 border-2 border-gray-600 transition duration-300 ease-in-out group">
+                    <span className="absolute inset-0 bg-primary transition-transform duration-300 ease-in-out transform -translate-x-full group-hover:translate-x-0"></span>
                     <span className="relative z-10 group-hover:text-white">Create Account</span>
                 </button>
             </div>

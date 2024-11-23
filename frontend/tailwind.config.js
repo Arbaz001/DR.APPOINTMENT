@@ -13,9 +13,9 @@ export default {
         'auto':'repeat(auto-fill,minmax(200px,1fr))'
       },
       animation: {
-        fadeIn: 'fadeIn 3s ease-in-out', // Extended duration to 3 seconds
-        slideUp: 'slideUp 2.5s cubic-bezier(0.4, 0, 0.2, 1)', // 2.5 seconds for smoother sliding
-        scaleIn: 'scaleIn 2s ease-in-out', // 2 seconds for scaling effect
+        fadeIn: 'fadeIn 1s ease-in-out', // Extended duration to 3 seconds
+        slideUp: 'slideUp 1.5s cubic-bezier(0.4, 0, 0.2, 1)', // 2.5 seconds for smoother sliding
+        scaleIn: 'scaleIn 1s ease-in-out', // 2 seconds for scaling effect
       },
       keyframes: {
         fadeIn: {

@@ -8,7 +8,7 @@ const About = () => {
           <p>ABOUT US</p>
         </div>
         <div className='my-10 flex flex-col md:flex-row gap-12'>
-          <img className='w-full md:max-w-[360px] rounded-3xl shadow-2xl shadow-primary' src={assets.about_image} alt="" />
+          <img className='w-full md:max-w-[360px] rounded-3xl shadow-lg shadow-primary' src={assets.about_image} alt="" />
           <div className='flex flex-col justify-center gap-6 md:w-2/4 text:sm text-gray-600 font-semibold'>
             <p>Welcome to Dr.Appointment, your trusted partner in managing your healthcare needs conveniently and efficiently. At Dr.appointment , we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
             <p>Dr.Appointment is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Dr.Appointment is here to support you every step of the way.</p>
@@ -17,7 +17,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className='text-xl my-4 font-extrabold text-gray-500'>
+        <div className='text-center text-xl mt-8 mb-8 font-extrabold text-gray-500'>
           <p>WHY CHOOSE US</p>
         </div>
 

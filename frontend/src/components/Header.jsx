@@ -28,7 +28,7 @@ const Header = () => {
       <div className="md:w-1/2 relative flex items-center justify-center bg-primary rounded-lg overflow-hidden">
         <div className="absolute w-full h-full bg-primary"></div>
         <img
-          className="w-full md:absolute bottom-0 h-auto rounded-lg shadow-custom animate-scaleIn z-10"
+          className="w-full md:absolute bottom-0 h-auto rounded-lg shadow-custom animate-scaleIn z-10 "
           src={assets.header_img}
           alt="Header"
         />
