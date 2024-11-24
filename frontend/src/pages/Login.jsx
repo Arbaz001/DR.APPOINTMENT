@@ -16,8 +16,8 @@ const Login = () => {
   
 
   return (
-    <form className='min-h-[80vh] flex items-center'>
-      <div className='flex flex-col gap-3 m-auto items-start p-8 min-w-[340px] sm:min-w-96 border rounded-xl text-zinc-600 text-sm shadow-lg shadow-primary'>
+    <form className='min-h-[80vh] flex items-center '>
+      <div className='flex flex-col gap-3 m-auto items-start p-8 min-w-[340px] sm:min-w-96 border rounded-xl text-zinc-600 text-sm shadow-lg shadow-primary hover:shadow-2xl hover:shadow-primary hover:transition-all duration-300'>
         <p className='text-2xl font-extrabold'>{state === 'Sign Up' ? "Create Account" : "Login"}</p>
         <p className='font-bold'>Please {state === 'Sign Up' ? "signup" : "login"} to book appointment</p>
         {

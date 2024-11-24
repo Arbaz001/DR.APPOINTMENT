@@ -1,10 +1,11 @@
-import React from "react";
-import { doctors } from "../assets/assets";
+import React,{ useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import { AppContext } from "../context/AppContext";
 
 const TopDoctors = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
+  const {doctors} = useContext(AppContext)
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger animation when 10% is visible
     triggerOnce: true, // Animate only once
