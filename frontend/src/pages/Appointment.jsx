@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { assets } from '../assets/assets'
+import BookingSlots from '../components/slots'
 
 const Appointment = () => {
 
@@ -48,6 +49,7 @@ const Appointment = () => {
 
           </div>
         </div>
+        <BookingSlots />
     </div>
   )
 }

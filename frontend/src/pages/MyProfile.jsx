@@ -17,7 +17,7 @@ const MyProfile = () => {
   const [isEdit, setIsEdit] = useState(false)
 
   return (
-    <div className='max-w-lg flex flex-col gap-2 border border-teal-200 p-3 rounded-xl shadow-lg shadow-primary hover:shadow-2xl hover:shadow-primary hover:transition-all duration-300'>
+    <div className='max-w-lg flex flex-col gap-2 border border-teal-200 p-3 rounded-xl shadow-lg shadow-primary hover:shadow-2xl hover:shadow-primary hover:transition-all duration-300 animate-fadeIn'>
       <img className='w-36 rounded-lg shadow-md shadow-teal-200' src={userData.image} alt="" />
       {
         isEdit

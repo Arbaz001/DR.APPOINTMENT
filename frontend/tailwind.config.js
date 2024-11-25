@@ -13,7 +13,7 @@ export default {
         'auto':'repeat(auto-fill,minmax(200px,1fr))'
       },
       animation: {
-        fadeIn: 'fadeIn 1s ease-in-out', // Extended duration to 3 seconds
+        fadeIn: 'fadeIn 0.5s ease-in-out', // Extended duration to 3 seconds
         slideUp: 'slideUp 1.5s cubic-bezier(0.4, 0, 0.2, 1)', // 2.5 seconds for smoother sliding
         scaleIn: 'scaleIn 1s ease-in-out', // 2 seconds for scaling effect
       },

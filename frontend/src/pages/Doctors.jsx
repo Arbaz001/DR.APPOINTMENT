@@ -24,7 +24,7 @@ const Doctors = () => {
   }, [doctors, speciality])
 
   return (
-    <div>
+    <div className="animate-fadeIn">
       <p className="text-gray-600 font-extrabold">Browse through the doctors specialist.</p>
       <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
         <div className="flex flex-col gap-4 text-sm text-gray-600">
@@ -35,7 +35,7 @@ const Doctors = () => {
           <p onClick={()=> speciality === 'Neurologist' ? navigate('/doctors') : navigate('/doctors/Neurologist') } className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300  rounded-xl font-bold transtion-all cursor-pointer ${speciality === "Neurologist" ? "bg-primary text-white": ""} hover:bg-primary hover:text-white hover:transition-all hover:duration-210 hover:shadow-lg hover:shadow-primary`}>Neurologist</p>
           <p onClick={()=> speciality === 'Gastroenterologist' ? navigate('/doctors') : navigate('/doctors/Gastroenterologist') } className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300  rounded-xl font-bold transtion-all cursor-pointer ${speciality === "Gastroenterologist" ? "bg-primary text-white": ""} hover:bg-primary hover:text-white hover:transition-all hover:duration-210 hover:shadow-lg hover:shadow-primary`}>Gastroenterologist</p>
         </div>
-      <div className="w-full grid grid-cols-auto gap-4 gap-y-6">
+      <div className="w-full grid grid-cols-auto gap-4 gap-y-6 ">
         {
         filterDoc.map((item, index) => (
           <div
