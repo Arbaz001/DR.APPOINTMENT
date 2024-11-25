@@ -72,7 +72,7 @@ export default function MyAppointments() {
                 Pay here
               </button>
               <button
-                className="w-full sm:w-32 border border-gray-200 text-gray-600 py-2 px-4 rounded-lg bg-red-800 text-white transition-colors font-bold hover:shadow-md hover:shadow-red-800 hover:transition-all hover:duration-200"
+                className="w-full sm:w-32 border border-gray-200  py-2 px-4 rounded-lg bg-red-800 text-white transition-colors font-bold hover:shadow-md hover:shadow-red-800 hover:transition-all hover:duration-200"
               >
                 Cancel appointment
               </button>
