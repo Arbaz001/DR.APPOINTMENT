@@ -27,7 +27,7 @@ export default function MyAppointments() {
 
       <div className="space-y-4">
         {appointments.map((appointment) => (
-          <div 
+          <div
             key={appointment.id}
             className="bg-white rounded-lg border border-gray-200 p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between shadow-lg hover:shadow-2xl hover:shadow-primary hover:transition-all hover:duration-200"
           >
@@ -37,7 +37,7 @@ export default function MyAppointments() {
                 alt={appointment.doctor.name}
                 className="w-35 h-40 rounded-lg object-cover bg-primary"
               />
-              
+
               <div className="space-y-1">
                 <h2 className="font-semibold text-gray-800">
                   {appointment.doctor.name}
@@ -45,7 +45,7 @@ export default function MyAppointments() {
                 <p className="text-sm text-gray-600">
                   {appointment.doctor.specialization}
                 </p>
-                
+
                 <div className="space-y-0.5">
                   <p className="text-sm text-gray-600 font-medium">
                     Address:
@@ -57,7 +57,7 @@ export default function MyAppointments() {
                     {appointment.address.area}
                   </p>
                 </div>
-                
+
                 <p className="text-sm text-gray-600">
                   <span className="font-medium">Date & Time: </span>
                   {appointment.dateTime}
@@ -66,12 +66,12 @@ export default function MyAppointments() {
             </div>
 
             <div className="w-full sm:w-auto flex flex-col gap-2">
-              <button 
+              <button
                 className="w-full sm:w-32 bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary transition-colors"
               >
                 Pay here
               </button>
-              <button 
+              <button
                 className="w-full sm:w-32 border border-gray-200 text-gray-600 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
               >
                 Cancel appointment
