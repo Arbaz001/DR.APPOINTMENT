@@ -28,9 +28,7 @@ const Banner = () => {
                         navigate('/login');
                         scrollTo(0, 0);
                     }}
-                    className="relative overflow-hidden bg-white text-primary font-bold py-3 px-8 rounded-full mt-6 border-2 border-gray-600 transition duration-300 ease-in-out group">
-                    <span className="absolute inset-0 bg-primary transition-transform duration-300 ease-in-out transform -translate-x-full group-hover:translate-x-0"></span>
-                    <span className="relative z-10 group-hover:text-white">Create Account</span>
+                    className="relative overflow-hidden bg-white text-black font-bold py-3 px-8 rounded-full mt-6 border-2 border-gray-600 transition duration-300 ease-in-out group  hover:text-primary hover:shadow-2xl hover:shadow-black hover:border-primary"> Create Account
                 </button>
             </div>
 

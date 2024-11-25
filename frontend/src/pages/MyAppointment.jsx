@@ -39,26 +39,26 @@ export default function MyAppointments() {
               />
 
               <div className="space-y-1">
-                <h2 className="font-semibold text-gray-800">
+                <h2 className="text-gray-800 font-bold">
                   {appointment.doctor.name}
                 </h2>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 font-bold">
                   {appointment.doctor.specialization}
                 </p>
 
                 <div className="space-y-0.5">
-                  <p className="text-sm text-gray-600 font-medium">
+                  <p className="text-sm text-gray-600 font-bold">
                     Address:
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 font-bold">
                     {appointment.address.street}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 font-bold">
                     {appointment.address.area}
                   </p>
                 </div>
 
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 font-bold">
                   <span className="font-medium">Date & Time: </span>
                   {appointment.dateTime}
                 </p>
@@ -67,12 +67,12 @@ export default function MyAppointments() {
 
             <div className="w-full sm:w-auto flex flex-col gap-2">
               <button
-                className="w-full sm:w-32 bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary transition-colors"
+                className="w-full sm:w-32 bg-primary text-white py-2 px-4 rounded-lg  transition-colors font-bold hover:shadow-md hover:shadow-primary hover:transition-all hover:duration-200"
               >
                 Pay here
               </button>
               <button
-                className="w-full sm:w-32 border border-gray-200 text-gray-600 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+                className="w-full sm:w-32 border border-gray-200 text-gray-600 py-2 px-4 rounded-lg bg-red-800 text-white transition-colors font-bold hover:shadow-md hover:shadow-red-800 hover:transition-all hover:duration-200"
               >
                 Cancel appointment
               </button>

@@ -6,6 +6,8 @@ import { useContext } from "react"
 const Doctors = () => {
   const { speciality } = useParams()
   const [filterDoc, setFilterDoc] = useState([])
+  const [showFilter,setShowFilter] =useState(false)
+
   const { doctors } = useContext(AppContext)
   const navigate = useNavigate()
 
@@ -27,7 +29,8 @@ const Doctors = () => {
     <div className="animate-fadeIn">
       <p className="text-gray-600 font-extrabold">Browse through the doctors specialist.</p>
       <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
-        <div className="flex flex-col gap-4 text-sm text-gray-600">
+        <button className={`py-1 px-3 border rounded-xl text-sm transtion-all sm:hidden ${showFilter ? 'bg-primary text-white' : '' }`} onClick={()=>setShowFilter(prev => !prev)}>Filters</button>
+        <div className={`flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
           <p onClick={()=> speciality === 'General physician' ? navigate('/doctors') : navigate('/doctors/General physician') } className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300  rounded-xl font-bold transtion-all cursor-pointer ${speciality === "General physician" ? "bg-primary text-white": ""} hover:bg-primary hover:text-white hover:transition-all hover:duration-210 hover:shadow-lg hover:shadow-primary`}>General physician</p>
           <p onClick={()=> speciality === 'Gynecologist' ? navigate('/doctors') : navigate('/doctors/Gynecologist') } className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300  rounded-xl font-bold transtion-all cursor-pointer ${speciality === "Gynecologist" ? "bg-primary text-white": ""} hover:bg-primary hover:text-white hover:transition-all hover:duration-210 hover:shadow-lg hover:shadow-primary`}>Gynecologist</p>
           <p onClick={()=> speciality === 'Dermatologist' ? navigate('/doctors') : navigate('/doctors/Dermatologist') } className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300  rounded-xl font-bold transtion-all cursor-pointer ${speciality === "Dermatologist" ? "bg-primary text-white": ""} hover:bg-primary hover:text-white hover:transition-all hover:duration-210 hover:shadow-lg hover:shadow-primary`}>Dermatologist</p>
